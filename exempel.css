@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+}
+
+p{
+    color:blue;
+    border:1px solid red;
+}
+
+.center{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+
+}
