@@ -1,11 +1,108 @@
 body{
     background-color: aqua;
+    height: 97vh;
+    width: 98vw;
 }
 
-p{
-    color:blue;
-    border:1px solid red;
+.wrapper{
+    height:95%;
+    width: 95%;
+    margin: 0 auto;
+    grid-gap:10px;
+    background-color: bisque;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 80px auto 50px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer";
 }
+
+#sida2 .wrapper{
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer";
+}
+header{
+    grid-area: header;
+    outline: 1px dotted black;
+}
+
+header > h1{
+    text-align: center;;
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav > ul{
+    margin:0;
+    padding: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#sida2 nav>ul{
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+nav li{
+    list-style-type: none;
+    border:1px solid red;
+    text-align: center;
+    font-size: 2em;
+    line-height: 2;
+}
+
+nav a:link,nav a:visited,nav a:focus,nav a:hover,nav a:active{
+        color:green;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    outline: 2px dotted purple;
+}
+
+main{
+    grid-area: main;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    outline: 2px dashed green;
+}
+
+table{
+    border:1px solid black;
+    width:80%;
+    border-collapse: collapse;
+}
+
+td,th{
+    border:1px solid red;
+    
+}
+
+tbody tr:nth-child(2){
+    background-color: yellow;
+}
+
+th:nth-child(1){
+    text-align: left;
+}
+
+aside{
+    grid-area: aside;
+    outline: 4px solid blueviolet;
+}
+
 
 .center{
     text-align: center;

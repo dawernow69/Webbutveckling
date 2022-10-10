@@ -6,11 +6,64 @@
         <link href="exempel.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Rubrik</h1>
-        <p class="center">Ett stycke</p>
-        <p>
-            <a href="http://www.teknikum.se">
-                En länk</a>
-        </p>
+        <div class="wrapper">
+            <header><h1>Rubrik</h1></header>
+            <nav>
+                <ul>
+                    <li><a href="exempel1.html">Sida1</a></li>
+                    <li><a href="sida2.html">Sida2</a></li>
+                    <li><a href="#">Sida3</a></li>
+                    <li><a href="#">Sida4</a></li>
+                </ul>
+            </nav>
+            <main>
+                <section>
+                    <h2>Huvudinnehåll</h2>
+                
+                    <p>Ett stycke</p>
+                    <p>
+                        <a href="http://www.teknikum.se">
+                            En länk</a>
+                    </p>
+                </section>
+                <section>
+                   <table>
+                       <caption>Tabellrubrik</caption>
+                       <thead>
+                        <tr>
+                            <th>Rubrik 1</th>
+                            <th>Rubrik 2</th>
+                            <th>Rubrik 3</th>
+                        </tr>
+                       </thead>
+                       <tbody>
+                       <tr>
+                           <td>tabellcell 1</td>
+                           <td>tabellcell 2</td>
+                           <td>tabellcell 3</td>
+                       </tr>
+                       <tr>
+                           <td colspan="2">tabellcell 4</td>
+                           <td>tabellcell 5</td>
+                           <!--<td>tabellcell 6</td>-->
+                       </tr>
+                       </tbody>
+                   </table>
+                </section>
+            </main>
+            <aside>
+                <h2>Reklam</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Accusantium repellendus laborum sit ut dolorum 
+                    quo. Laboriosam tempora possimus, quaerat voluptas 
+                    iure eum dolorem, ea facilis mollitia quisquam magni 
+                    soluta. Alias.
+                </p>
+            </aside>
+            <footer>
+                <p>Uppgift 3</p>
+            </footer>
+        </div>
     </body>
 </html>
